@@ -7,7 +7,7 @@ const SigninPage = () => {
         <h3 className="w-full font-bold text-3xl text-center ">Welcome Back</h3>
         <SignInFrom />
         <p>
-          Don't have an account?{" "}
+          Don&apos;t have an account?{" "}
           <Link href="/auth/signup" className="text-[#D23434] font-semibold">
             Sign up
           </Link>

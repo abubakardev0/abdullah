@@ -19,8 +19,8 @@ export default function SignupPage() {
         </p>
 
         <p className="text-sm text-neutral-500">
-          By clicking 'Continue', you acknowledge that you have read and accept
-          the{" "}
+          By clicking &apos;Continue&apos;, you acknowledge that you have read
+          and accept the{" "}
           <Link
             href="/auth/terms-of-service"
             className="text-[#D23434] font-semibold"
