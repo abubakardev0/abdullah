@@ -2,7 +2,7 @@
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import * as z from "zod";
-
+import { Checkbox } from "@/components/ui/checkbox";
 import { Button } from "@/components/ui/button";
 import {
   Form,
@@ -22,6 +22,7 @@ const signInFormSchema = z.object({
   password: z.string().min(6, {
     message: "Password must be at least 6 characters.",
   }),
+  remember: z.boolean().default(false).optional(),
 });
 
 export function SignInFrom() {
@@ -30,6 +31,7 @@ export function SignInFrom() {
     defaultValues: {
       email: "",
       password: "",
+      remember: true,
     },
   });
 
@@ -74,6 +76,26 @@ export function SignInFrom() {
             </FormItem>
           )}
         />
+
+        <FormField
+          control={form.control}
+          name="mobile"
+          render={({ field }) => (
+            <FormItem className="flex flex-row items-center space-x-3 space-y-0 rounded-md ">
+              <FormControl>
+                <Checkbox
+                  checked={field.value}
+                  onCheckedChange={field.onChange}
+                  className=" data-[state=checked]:text-white font-bold data-[state=checked]:bg-[#D23434] data-[state=unchecked]:text-black w-6 h-6  "
+                />
+              </FormControl>
+              <FormDescription className="text-black">
+                Remember me
+              </FormDescription>
+            </FormItem>
+          )}
+        />
+
         <Button
           variant="primary"
           className="w-full h-14 text-white font-semibold text-xl outline-none border-none "
