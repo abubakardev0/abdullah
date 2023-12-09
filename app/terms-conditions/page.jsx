@@ -110,9 +110,10 @@ const TermsAndConditionPage = () => {
           Canadian Rentals Inc - Mobile Toilet Trailer Rental Agreement
         </h1>
         <p>
-          This agreement (the "Agreement") is entered into between Canadian
-          Rentals Inc, hereinafter referred to as "The Company," and the client,
-          collectively referred to as the "Parties."
+          This agreement (the &quot;Agreement&quot;) is entered into between
+          Canadian Rentals Inc, hereinafter referred to as &quot;The
+          Company,&quot; and the client, collectively referred to as the
+          &quot;Parties.&quot;
         </p>
 
         {agreementSections.map((section, index) => (
