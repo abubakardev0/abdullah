@@ -1,6 +1,6 @@
 import React from "react";
 import Heading from "@/layout/heading";
-import { InvoiceCard } from "@/components/invoices/invoice-card";
+import { InvoiceCard } from "@/components/client/invoices/invoice-card";
 
 const InvoicesPage = () => {
   return (

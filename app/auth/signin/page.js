@@ -2,9 +2,9 @@ import { SignInFrom } from "@/components/auth-form/signin-form";
 import Link from "next/link";
 const SigninPage = () => {
   return (
-    <div className="flex flex-col items-center justify-center w-full h-full">
-      <div className="w-full max-w-md space-y-12">
-        <h3 className="w-full font-bold text-3xl text-center ">Welcome Back</h3>
+    <div>
+      <div className="w-full space-y-12 max-w-[400px]">
+        <h2 className="font-bold text-3xl text-center ">Welcome Back</h2>
         <SignInFrom />
         <p>
           Don&apos;t have an account?{" "}

@@ -2,8 +2,8 @@ import Image from "next/image";
 import LogoWhite from "@/assets/images/logo-white.png";
 export default function AuthLayout({ children }) {
   return (
-    <section className="flex flex-row  gap-0  w-full h-screen overflow-hidden ">
-      <div className="flex flex-col space-y-24  justify-center items-center w-full h-full auth_image ">
+    <main className="grid grid-cols-12 w-full h-screen overflow-hidden">
+      <section className="col-start-1 col-end-5 col-span-5 flex flex-col space-y-24  justify-center items-center w-full h-full auth_image ">
         <div className="">
           <Image src={LogoWhite} alt="logo" />
         </div>
@@ -17,11 +17,11 @@ export default function AuthLayout({ children }) {
             the VIP section at the Queen City Ex too.
           </p>
         </div>
-      </div>
+      </section>
 
-      <main className="container flex flex-col justify-center items-center w-full h-full  ">
+      <section className="col-start-7 col-span-7 col-end-13 flex items-center justify-center w-full h-full ">
         {children}
-      </main>
-    </section>
+      </section>
+    </main>
   );
 }
